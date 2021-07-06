@@ -1,0 +1,22 @@
+{
+  "name": "advancednode",
+  "version": "1.0.0",
+  "description": "* Speed up database queries with caching for MongoDB backed by Redis * Utilize Worker Threads and Clustering to dramatically improve the performance of Node servers * master the Event Loop and understand each of its stages * Apply scalable image and file upload to your app, utilizing AWS S3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scubaluke/advancedNodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scubaluke/advancedNodeJS/issues"
+  },
+  "homepage": "https://github.com/scubaluke/advancedNodeJS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
