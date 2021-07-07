@@ -101,19 +101,23 @@
 // console.log(anagrams('rail SAFETY!', 'fairy tales'));
 // console.log(anagrams('hi there', 'by there'));
 
-// function capitalization(string) {
-
-//    return string.split(' ').map(letter => `${letter[0].toUpperCase()}${letter.split('').splice(1).join('')} `
-//    ).join('').trim()
-
-
-// }
-
 function capitalization(string) {
-   const result = ''
-   for (let letter of string) {
-       console.log(letter);
-   }
-console.log('words');
+
+   return string.split(' ').map(word => `${word[0].toUpperCase()}${word.slice(1)} `
+   ).join('').trim()
+
+
 }
+
+// function capitalization(string) {
+//    let result = ''
+//    for (let i = 0; i < string.length; i++) {
+//       if(string[i-1] === ' ' || !string[i-1]) {
+//         result  += string[i].toUpperCase()
+//       } else {
+//          result += string[i]
+//       }
+//    }
+//    return result
+// }
 console.log(capitalization('here is a sentience.'));
