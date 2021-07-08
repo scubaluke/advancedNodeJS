@@ -101,13 +101,10 @@
 // console.log(anagrams('rail SAFETY!', 'fairy tales'));
 // console.log(anagrams('hi there', 'by there'));
 
-function capitalization(string) {
-
-   return string.split(' ').map(word => `${word[0].toUpperCase()}${word.slice(1)} `
-   ).join('').trim()
-
-
-}
+// function capitalization(string) {
+//    return string.split(' ').map(word => `${word[0].toUpperCase()}${word.slice(1)} `
+//    ).join('').trim()
+// }
 
 // function capitalization(string) {
 //    let result = ''
@@ -120,4 +117,55 @@ function capitalization(string) {
 //    }
 //    return result
 // }
-console.log(capitalization('here is a sentience.'));
+// console.log(capitalization('here is a sentience.'));
+
+// function steeps(n) {
+//    let  steep = 1
+
+//    for (let row = 0; row < n; row++) {
+//       let hold  = ''
+
+//      // if first or steep less then  iteration clg #
+//      // else clg ' '
+//       for (let col  = 0; col < n; col++) {
+//          // console.log(row, col);
+//          if (col <= row) {
+//             hold += '#'
+//          } else {
+//             hold += '.'
+//          }
+//       }
+//     console.log(hold);
+//    }
+// }
+// console.log(steeps(2));
+// console.log(steeps(5));
+
+// function revNum(x) {
+//    return par x.toString().split('').reverse().join('') * Math.sign(x)
+// }
+// console.log(revNum(123));
+
+// var longestCommonPrefix = function(strs) {
+   // create variable of first word in array
+   // for (let word = 0; word < strs.length; word++) {
+   //    console.log(word);
+   //    // console.log(strs[word]);
+   //    for (let letter  = 0; letter < word.length;  letter++)
+   //    console.log(letter);
+   //    // console.log(word[letter]);
+   // }
+//    let result = ''
+//    for (let  word = 0; word<strs.length; word++) {
+//       for (let letter = 0; letter<strs[word].length; letter++) {
+//          console.log(strs[word][letter]);
+//          // if((strs[word][letter]===strs[word+1][letter])) {
+//          //    result += strs[word][letter]
+//          // }
+//          // console.log(strs[word][letter]===strs[word+1][letter]);
+//       }
+//    }
+//   return result
+   
+// };
+// console.log(longestCommonPrefix(["flower","flow","flight"]));
