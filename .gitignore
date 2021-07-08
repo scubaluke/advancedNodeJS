@@ -1,7 +1,5 @@
 /-codePractice/node_modules
 /node_modules
-/projectOne/node_modules
-/projectOne/.env
+dev.js
 .env
-/AdvancedNodeProject/.env
-/AdvancedNodeProject/node_modules
+/AdvancedNodeProjectOne/node_modules
