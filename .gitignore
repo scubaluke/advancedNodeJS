@@ -1,2 +1,6 @@
 /-codePractice/node_modules
 /node_modules
+/projectOne/node_modules
+/projectOne/.env
+.env
+/AdvancedNodeProject/.env
