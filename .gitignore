@@ -4,3 +4,4 @@
 /projectOne/.env
 .env
 /AdvancedNodeProject/.env
+/AdvancedNodeProject/node_modules
