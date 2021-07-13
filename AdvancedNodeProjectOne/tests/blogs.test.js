@@ -22,4 +22,12 @@ describe('When logged in', async  () => {
         const label = await page.getContentsOf('form label')
         expect(label).toEqual('Blog Title')
     })
+    describe('And using invalid inputs', async () => {
+        beforeEach(async () => {
+            await page.click('form button')
+        })
+        test('The form shows an error message',  async () =>   {
+
+        })
+    })
 })
