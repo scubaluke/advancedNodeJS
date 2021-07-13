@@ -11,10 +11,15 @@ afterEach(async () => {
     await page.close()
 })
 
-test('when logged in, can see blog create form', async () => {
-    await page.login()
-    await page.click('a.btn-floating')
 
-    const label = await page.getContentsOf('form label')
-    expect(label).toEqual('Blog Title')
+describe('When logged in', async  () => {
+    beforeEach(async () => {
+        await page.login()
+        await page.click('a.btn-floating')
+    })
+
+    test('Can see blog create form', async () => {
+        const label = await page.getContentsOf('form label')
+        expect(label).toEqual('Blog Title')
+    })
 })
