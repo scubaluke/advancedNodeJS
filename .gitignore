@@ -1,6 +1,7 @@
 /-codePractice/node_modules
 /node_modules
 dev.js
+ci.js
 .env
 /AdvancedNodeProjectOne/node_modules
 /client/node_modules
