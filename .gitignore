@@ -3,3 +3,4 @@
 dev.js
 .env
 /AdvancedNodeProjectOne/node_modules
+/client/node_modules
