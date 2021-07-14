@@ -4,7 +4,7 @@ let page
 
 beforeEach(async () => {
     page = await Page.build()
-    await page.goto('localhost:3000')
+    await page.goto('http://localhost:3000')
 })
 
 afterEach(async () => {
@@ -58,4 +58,23 @@ describe('When logged in', async  () => {
             expect(contentError).toEqual('You must provide a value')
         })
     })
+})
+
+describe('When user is not logged in', async () => {
+    test('User cannot create blog posts', async () => {
+      const result = await page.evaluate(
+            () => {
+               return fetch('/api/blogs', {
+                    method: 'POST',
+                    credentials: 'same-origin',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ title: 'My Title', content: 'My Content'})
+                }).then(res  => res.json())
+            }
+        )
+    })
+    console.log(result);
+    expect(result).toEqual({ error: 'Your must log in!'})
 })
